@@ -1,11 +1,39 @@
 import React from 'react';
+import Location from "../Components/About/Location";
 
-const About = () => {
+
+   const About = () => {
   return (
-    <div>
-      
+    <div className='container pt-14'>
+        <div className="py-10">
+            <h1 className='my-8 border-l-8 border-gray-400 mb-4 pl-2 py-2 text-3xl font-bold'>
+                About Us
+            </h1>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio, quod veritatis,
+                soluta excepturi ratione velit cupiditate fugit accusantium recusandae accusamus 
+                omnis similique iusto cumque quis ezor consectetur numquam ipsam? Dolor animi expedita 
+                sapiente eius, distinctio provident excepturi omnis sint ad dolorum harum adipisci numquam 
+                temporibus nulla deserunt quos fugit in officia odio porro qui, ipsa hic similique accusantium. Obcaecati, tempore.
+               
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio, quod veritatis,
+                soluta excepturi ratione velit cupiditate fugit accusantium recusandae accusamus 
+                omnis similique iusto cumque quis error consectetur numquam ipsam? Dolor animi expedita 
+                sapiente eius, distinctio provident excepturi omnis sint ad dolorum harum adipisci numquam 
+                temporibus nulla deserunt quos fugit in officia odio porro qui, ipsa hic similique accusantium. Obcaecati, tempore.
+            </p>
+            <br/>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio, quod veritatis,
+                 soluta excepturi ratione velit cupiditate fugit accusantium recusandae accusamus 
+                 omnis similique iusto cumque quis error consectetur numquam ipsam? Dolor animi expedita 
+                 sapiente eius, distinctio provident excepturi omnis sint ad dolorum harum adipisci numquam 
+                 temporibus nulla deserunt quos fugit in officia odio porro qui, ipsa hic similique accusantium. Obcaecati, tempore.
+            </p>
+        </div>
+       <Location />
     </div>
-  )
+  );
 };
 
 export default About;
