@@ -23,6 +23,11 @@ const navbarLinks =[
     link: "/blogs",
   },
   {
+    id: 4,
+    name: "Contact Us",
+    link: "/contact-us",
+  },
+  {
     id: 6,
     name: "Student Resources",
     link: "/resources",
@@ -36,7 +41,7 @@ const ResponsiveMenu = ({ showMenu, setShowMenu }) => {
     >
         {/* Nav Section*/}
         <div className='text-black mt-4'>
-        <ul>
+        <ul className="space-y-4  text-xl">
           {navbarLinks.map((data, index) => (  // Use index for key
             <li key={index}>
               <Link

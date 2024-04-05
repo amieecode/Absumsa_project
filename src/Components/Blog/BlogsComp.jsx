@@ -36,7 +36,7 @@ const BlogsComp = () => {
   return (
     <div>
       <div data-aos="fade-up" className='container'>
-        <h1 className='my-8 border-l-8 border-gray-400 pl-2 py-4 pt-2 text-3xl font-bold'>
+        <h1 className='my-6 border-l-8 border-secondary/75 pl-2 py-4 pt-2 text-3xl font-bold'>
             Our Latest Blogs
         </h1>
         <div className='grid grid-cols-1 gap-4 sm:grid-cols-2 md:grid-cols-3'>

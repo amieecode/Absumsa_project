@@ -1,5 +1,4 @@
-import React from 'react';
-import Location from "../Components/About/Location";
+import Location from '../Components/Location/Location';
 
 
    const About = () => {

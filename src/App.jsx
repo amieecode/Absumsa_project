@@ -5,7 +5,7 @@ import Home from './Pages/Home';
 import About from './Pages/About';
 import Blogs from './Pages/Blogs';
 import BlogsDetails from './Pages/BlogsDetails';
-import PlacesRoute from './Pages/PlacesRoute';
+import ContactUs from './Pages/ContactUs';
 import NoPage from './Pages/NoPage';
 
 const App = () => {
@@ -18,7 +18,7 @@ const App = () => {
           <Route path="/about" element={<About />} />
           <Route path="/blogs" element={<Blogs />} />
           <Route path="/blogs/:id" element={<BlogsDetails />} />
-          <Route path="/places" element={<PlacesRoute />} />
+          <Route path="/contact-us" element={<ContactUs />} />
           <Route path="*" element={<NoPage />} />
         </Route>
       </Routes>

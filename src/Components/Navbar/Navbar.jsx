@@ -17,7 +17,7 @@ const Navbar = () => {
         <div className='flex justify-between items-center'>
           {/* Logo Section*/}
           <div>
-            <Link to="/" className='font-bold text-primary text-1xl sm:text-2xl flex justify-center items-center gap-2 tracking-wider'>
+            <Link to="/" className='font-bold text-primary text-2xl sm:text-2xl flex justify-center items-center tracking-wider'>
               <img 
                   src={LogoImg} 
                   alt="/" 
@@ -28,7 +28,7 @@ const Navbar = () => {
           </div>
           {/* Navlinks Section */}
           <div className='hidden md:block'>
-            <ul className='flex items-center gap-8'>
+            <ul className='flex items-center gap-6'>
               <li className='py-4'>
                 <NavLink 
                    to="/"
@@ -74,18 +74,18 @@ const Navbar = () => {
                   Student Resources
                 </NavLink>
               </li>
+              <li className='py-4'>
+                <NavLink 
+                    to="/contact-us" 
+                    onClick={() => window.scrollTo(0, 0)}
+                    className={({ isActive }) => (isActive ? 'active' : '')}
+                  >
+                  Contact Us
+                </NavLink>
+              </li>
             </ul>
          
           </div>
-
-          {/* Contact us Button*/}
-          <div className='flex items-center gap-4'>
-          <button className='bg-gradient-to-r from-primary to-secondary hover:bg-gradient-to-r hover:from-secondary
-                        hover:bg-primary transition-all duration-600 text-white px-3 py-1 rounded-full'>
-             Contact Us
-          </button>
-          </div>
-
 
           {/* Mobile Hamburger Menu*/}
           <div className='md:hidden block'>
