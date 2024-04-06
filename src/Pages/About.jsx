@@ -1,10 +1,12 @@
+import AboutSection from '../Components/About/AboutSection';
 import Location from '../Components/Location/Location';
-
 
    const About = () => {
   return (
-    <div className='container pt-14'>
-        <div className="py-10">
+    <div className='pt-14'>
+      <AboutSection />
+      <div className='container'>       
+        <div className="py-8">
             <h1 className='my-8 border-l-8 border-gray-400 mb-4 pl-2 py-2 text-3xl font-bold'>
                 About Us
             </h1>
@@ -31,6 +33,7 @@ import Location from '../Components/Location/Location';
             </p>
         </div>
        <Location />
+      </div>
     </div>
   );
 };

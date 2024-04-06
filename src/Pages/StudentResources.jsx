@@ -1,11 +1,11 @@
 import React from 'react';
 
-const PlacesRoute = () => {
+const StudentResources = () => {
   return (
     <div>
       
     </div>
   )
-};
+}
 
-export default PlacesRoute;
+export default StudentResources;

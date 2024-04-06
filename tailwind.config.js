@@ -6,6 +6,10 @@ export default {
   ],
   theme: {
     extend: {
+      fontFamily: {
+        sans: ["Roboto", "sans-serif"],
+        //cursive: ["Pacifico", "cursive"],
+      },
       colors: {
         primary: "#391864",
         secondary: "#8874a2",

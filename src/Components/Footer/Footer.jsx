@@ -34,8 +34,6 @@ const Footer = () => {
         <div className='md:flex md:justify-between md:items-center sm:px-12 px-4 bg-gray-400 py-7 '>
             <h1 className='lg:text-4xl text-3xl md:mb-0 mb-6 lg:leading-normal font-semibold md:w-2/5'>
                 <span 
-                    data-aos="zoom-out"
-                    data-aos-delay="300"
                     className='text-primary font-bold'>
                         Subscribe
                 </span> {" "}
@@ -128,6 +126,7 @@ const Footer = () => {
                     </div>
             
             </div>
+            <hr />
             <div className='grid grid-col-1 text-center pt-2 pb-8'>
                 <h6 className="">&copy; Copyright {Year} Absumsa All Rights Reserved</h6>
             </div>
