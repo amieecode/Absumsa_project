@@ -1,130 +1,115 @@
-import Slider from "react-slick";
+import React from 'react';
+import { FaFacebook, FaInstagram, FaSquareXTwitter, FaWhatsapp } from 'react-icons/fa6';
+//import Image from "../../assets/profile.jpeg";
 
-const TeamData = [
-    {
-        id:1,
-        name:"Stan Smith",
-        title:"President",
+const TeamData =[
+    { 
+        id: 1,
+        name: "John Smith",
+        title: "Our President",
         img: "https://picsum.photos/101/101",
+        iconFb: ( <FaFacebook /> ),
+        iconIg: ( <FaInstagram/> ),
+        iconX: ( <FaSquareXTwitter /> ),
+        iconW: ( <FaWhatsapp/> )
     },
     {
-        id:2,
-        name:"Stan Smith",
-        title:"Director of Academics",
-        img: "https://picsum.photos/101/101",
-    },
-    {
-        id:3,
-        name:"Stan Smith",
-        title: "Director of Sport",
-        img: "https://picsum.photos/102/101",
-    },
-    {
-        id:4,
-        name:"Stan Smith",
-        title:"Director of Financial",
-        img: "https://picsum.photos/104/104",
-    },
-    {
-        id:5,
-        name:"Stan Smith",
-        title: "Director of Social",
-        img: "https://picsum.photos/101/101",
-    },
-    {
-        id:6,
-        name:"Stan Smith",
-        title: "Secretary",
-        img: "https://picsum.photos/102/102",
-    }
+      id: 2,
+      name: "Ever Rose",
+      title: "Vice President",
+      img: "https://picsum.photos/102/102",
+      iconFb: ( <FaFacebook /> ),
+      iconIg: ( <FaInstagram/> ),
+      iconX: ( <FaSquareXTwitter /> ),
+      iconW: ( <FaWhatsapp/> )
+  },
+  {
+    id: 3,
+    name: "Walter snow",
+    title: "Director of Academics",
+    img: "https://picsum.photos/103/103",
+    iconFb: ( <FaFacebook /> ),
+    iconIg: ( <FaInstagram/> ),
+    iconX: ( <FaSquareXTwitter /> ),
+    iconW: ( <FaWhatsapp/> )
+},
+  {
+      id: 4,
+      name: "Obinna Eze",
+      title: "Director of Social",
+      img: "https://picsum.photos/104/104",
+      iconFb: ( <FaFacebook /> ),
+      iconIg: ( <FaInstagram/> ),
+      iconX: ( <FaSquareXTwitter /> ),
+      iconW: ( <FaWhatsapp/> )
+  },
+  {
+    id: 5,
+    name: "Ever Rose",
+    title: "Director of Sport",
+    img: "https://picsum.photos/101/101",
+    iconFb: ( <FaFacebook /> ),
+    iconIg: ( <FaInstagram/> ),
+    iconX: ( <FaSquareXTwitter /> ),
+    iconW: ( <FaWhatsapp/> )
+},
+ {
+      id: 6,
+      name: "Buike Snow",
+      title: "Financial Secretary",
+      img: "https://picsum.photos/102/102",
+      iconFb: ( <FaFacebook /> ),
+      iconIg: ( <FaInstagram/> ),
+      iconX: ( <FaSquareXTwitter /> ),
+      iconW: ( <FaWhatsapp/> )
+  },
 ]
 
 const OurTeam = () => {
-    const settings = {
-        dots: true,
-        arrows: false,
-        infinite: true,
-        speed: 500,
-        slidesToScroll: 1,
-        autoplay: true,
-        autoplaySpeed: 2000,
-        cssEase: "linear",
-        pauseOnHover: true,
-        pauseOnFocus: true,
-        responsive: [
-            {
-                breakpoint: 10000,
-                settings: {
-                    slidesToShow: 3,
-                    slidesToScroll: 1,
-                    infinite: true,
-                },
-            },
-            {
-                breakpoint: 1024,
-                settings: {
-                    slidesToShow: 2,
-                    slidesToScroll: 1,
-                    initialSlide: 2,
-                },
-            },
-            {
-                breakpoint: 640,
-                settings: {
-                    slidesToShow: 1,
-                    slidesToScroll: 1,
-                    initialSlide: 1,
-                },
-            },
-            
-        ]
-    };
   return (
-    <div>
-      <div className="py-10 mb-10">
-        <div className="container">
-            {/* Team header section */}
-            <div data-aos="fade-up" className="text-center mb-10">
-                <h1 className="text-4xl font-bold text-gray-800">
-                    Our Excos
-                </h1>
+    <section className="container py-16 sm:min-h-[600px]">
+      <div className="">
+        {/* Team content */}
+        <h1 className="text-primary text-3xl font-semibold text-center sm:text-4xl my-10">
+          Meet Our Team
+        </h1>
+        <p className="text-base text-center text-gray-400 my-6">
+          {/* Your paragraph content */}
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptate vel, deserunt esse nisi doloribus, 
+            quod eligendi aspernatur dolorum quibusdam accusamus at adipisci laboriosam ratione vitae molestias enim quidem fuga accusantium.
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptate vel, deserunt esse nisi doloribus, 
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+        </p>
+        {/* Card Section */}
+        <div className="grid grid-cols-3 sm:grid-col-1 md:grid-col-2 gap-4">
+          {TeamData.map((data, index) => (
+            <div key={data.id} className="text-center p-4 sm:py-10 pt-6">
+              <div className="grid place-item-center rounded-full">
+                {data.img}
+              </div>
+              <h1 className="text-xl font-bold">{data.name}</h1>
+              <p className="text-secondary">{data.title}</p>
+              {/* Social Links*/}
+              <div className="space-x-3 mt-2">
+                <div className="inline-block text-lg hover:scale-125 duration-300">
+                  <a href="#">{data.iconFb}</a>
+                </div>
+                <div className='inline-block text-lg hover:scale-125 duration-300'>
+                  <a href="#">{data.iconIg}</a>
+                </div>
+                <div className='inline-block text-lg hover:scale-125 duration-300'>
+                  <a href="#">{data.iconX}</a>
+                </div>
+                <div className='inline-block text-lg hover:scale-125 duration-300'>
+                  <a href="#">{data.iconW}</a>
+                </div>
+              </div>
             </div>
-            {/* Team card section */}
-            <div data-aos="zoom-in">
-            <Slider {...settings}>
-                {TeamData.map((data, index) => {
-                    return(
-                        <div className="my-6" key={data.id}>
-                            <div className="flex flex-col gap-4 shadow-lg py-8 px-6 mx-4 rounded-xl bg-primary/10 relative">
-                                {/*Image Section*/}
-                                <div className="mb-4">
-                                    <img 
-                                        src={data.img}
-                                        alt=""
-                                        className="rounded-full w-20 h-20 items-center"
-                                    />
-                                </div>
-                                {/* Content section */}
-                                <div className="flex flex-col item-center gap-4">
-                                    <div className="space-y-3">
-                                        <h1 className="text-xl font-bold text-black/70">{data.name}</h1>
-                                        <p className="text-sm text-gray-500">{data.title}</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    )
-                }
-                
-                )}
-            
-            </Slider>
-
-            </div>
+          ))}
         </div>
       </div>
-    </div>
-  )
-}
+    </section>
+  );
+};
 
 export default OurTeam;

@@ -1,10 +1,13 @@
-import React from 'react'
+import React from 'react';
+import MissionVision from '../Components/Events/MissionVision';
+import OurTeam from '../Components/About/OurTeam';
 
 const Events = () => {
   return (
-    <div>
-      
-    </div>
+    <main className=''>
+      <MissionVision />
+      <OurTeam />
+    </main>
   )
 }
 

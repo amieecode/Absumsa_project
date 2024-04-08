@@ -1,10 +1,18 @@
 import AboutSection from '../Components/About/AboutSection';
+import Hero from '../Components/About/Hero';
+import OurPresident from '../Components/About/OurPresident';
+import OurTeam from '../Components/About/OurTeam';
+import MissionVision from '../Components/Events/MissionVision';
 import Location from '../Components/Location/Location';
 
    const About = () => {
   return (
     <div className='pt-14'>
+      <Hero />
       <AboutSection />
+      <OurPresident />
+      <MissionVision />
+      <OurTeam />
       <div className='container'>       
         <div className="py-8">
             <h1 className='my-8 border-l-8 border-gray-400 mb-4 pl-2 py-2 text-3xl font-bold'>

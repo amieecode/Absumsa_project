@@ -21,7 +21,7 @@ const Navbar = () => {
               <img 
                   src={LogoImg} 
                   alt="/" 
-                  className='h-16'
+                  className='h-14'
               />
               ABSUMSA
             </Link>
