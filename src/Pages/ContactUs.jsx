@@ -15,7 +15,7 @@ const ContactUs = () => {
                         <h1 className='text-gray-800 uppercase tracking-wider font-medium text-4xl'>
                             Send Us Your Message
                         </h1>
-                        <div className='bg-primary w-14 mx-auto h-0.5'></div>
+                        <div className='bg-secondary w-16 mx-auto h-0.5'></div>
                         <p className='text-gray-400 leading-4 text-base'>
                             Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repellat, deserunt consectetur voluptatem, 
                             praesentium atque nobis quis! 
@@ -91,7 +91,7 @@ const ContactUs = () => {
                                     <h1 className='font-bold uppercase text'>Let hear from you</h1>
                                     <div className='grid grid-cols-1 md:grid-cols-2 gap-4'>
                                         {/* Name Label*/}
-                                        <label for="name" className='sr-only'>Name</label>
+                                        <label htmlFor="name" className='sr-only'>Name</label>
                                         <input 
                                             id="name"
                                             type="text"
@@ -100,7 +100,7 @@ const ContactUs = () => {
                                             className='form-input'>
                                         </input>
                                         {/* Email Label*/}
-                                        <label for="email" className='sr-only'>Email</label>
+                                        <label htmlFor="email" className='sr-only'>Email</label>
                                         <input 
                                             id="email"
                                             type="email"
@@ -109,7 +109,7 @@ const ContactUs = () => {
                                             className='form-input'>
                                         </input>
                                         {/* Phone Number Label*/}
-                                        <label for="phone" className='sr-only'>Phone Number</label>
+                                        <label htmlFor="phone" className='sr-only'>Phone Number</label>
                                         <input 
                                             id="tel"
                                             type="tel"
@@ -118,7 +118,7 @@ const ContactUs = () => {
                                             className='form-input'>
                                         </input>
                                         {/* Subject Label*/}
-                                        <label for="subject" className='sr-only'>Subject</label>
+                                        <label htmlFor="subject" className='sr-only'>Subject</label>
                                         <input 
                                             id="subject"
                                             type="text"
@@ -128,7 +128,7 @@ const ContactUs = () => {
                                         </input>
                                     </div>
                                        {/* Message Textarea Label*/}
-                                       <label for="message" className='sr-only'>Message</label>
+                                       <label htmlFor="message" className='sr-only'>Message</label>
                                         <textarea 
                                             id="message"
                                             type="message"

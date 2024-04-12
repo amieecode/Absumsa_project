@@ -8,7 +8,8 @@ export default {
     extend: {
       fontFamily: {
         sans: ["Roboto", "sans-serif"],
-        //cursive: ["Pacifico", "cursive"],
+        cursive: ["Pacifico", "cursive"],
+        name:["EB Garamond", "serif"],
       },
       colors: {
         primary: "#391864",

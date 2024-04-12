@@ -1,35 +1,27 @@
 import React from 'react';
-import Image from "../../assets/building.jpg";
+import Image from "../../assets/absu.jpg";
 
 const Hero = () => {
   return (
-    <section className="relative lg:pb-40 lg:pt-56 py-32">
-      <div className='relative overflow-hidden'>
+    <div className='relative block overflow-x-hidden'>
+    <figure className="relative">
+      <div className=''>
           <img
             src={Image}
             alt=""
-            className="absolute inset-0 h-full w-full object-cover"
+            className="w-full object-cover h-[300px] lg:h-[800px]"
           />
-          <div className='absolute inset-0 bg-gradient-to-b from-secondary to-primary/50 opacity-25'>
+          <div className='absolute inset-0 bg-black opacity-25'>
           </div>
+          <div className="absolute inset-0 flex items-center justify-center pt-[4rem] md:pt-[4rem] flex-col text-center ">
+              <h1 className='text-4xl md:text-5xl lg:text-6xl capitalize font-bold text-white mb-[2rem]'>
+                    About Us
+              </h1>
+         </div>
       </div> 
-      <div className="container mx-auto px-4"> 
-          <div className="flex justify-center">
-              <div className="lg:w-2/3 text-center relative">
-                  <div className="space-y-6 mb-10">
-                        <h1 className='text-4xl md:text-5xl lg:text-6xl leading-tight capitalize font-bold text-white shadow-lg'>
-                            About Us
-                        </h1>
-                        <p className='text-base md:text-lg text-white shadow-lg'>
-                            Lorem ipsum dolor sit amet consectetur 
-                            adipisicing elit. Est velit voluptatibus maxime.
-                            adipisicing elit. Est velit voluptatibus maxime.
-                        </p>
-                  </div>
-              </div>
-          </div>     
-      </div>    
-    </section>
+    </figure>
+    </div>
+   
   )
 };
 

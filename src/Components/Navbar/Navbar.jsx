@@ -12,7 +12,7 @@ const Navbar = () => {
   };
   return (
   <>
-    <div className='fixed top-0 right-0 w-full bg-white text-black shadow-md'>
+    <div className='fixed top-0 z-50 right-0 w-full bg-white text-black shadow-md'>
       <div className='container py-3 sm:py-0'>
         <div className='flex justify-between items-center'>
           {/* Logo Section*/}
@@ -21,7 +21,7 @@ const Navbar = () => {
               <img 
                   src={LogoImg} 
                   alt="/" 
-                  className='h-14'
+                  className='h-16 py-[0.5rem]'
               />
               ABSUMSA
             </Link>
