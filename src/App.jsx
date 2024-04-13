@@ -7,7 +7,6 @@ import Home from './Pages/Home';
 import About from './Pages/About';
 import Events from './Pages/Events';
 import Blogs from './Pages/Blogs';
-import BlogsDetails from './Pages/BlogsDetails';
 import ContactUs from './Pages/ContactUs';
 import StudentResources from './Pages/StudentResources';
 import NoPage from './Pages/NoPage';
@@ -29,7 +28,6 @@ const App = () => {
           <Route index element={<Home />} />
           <Route path="/about" element={<About />} />
           <Route path="/blogs" element={<Blogs />} />
-          <Route path="/blogs/:id" element={<BlogsDetails />} />
           <Route path="/events" element={<Events />} />
           <Route path="/resources" element={<StudentResources />} />
           <Route path="/contact-us" element={<ContactUs />} />

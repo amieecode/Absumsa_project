@@ -5,7 +5,7 @@ import BlogsComp from "../Components/Blog/BlogsComp";
 const BlogsDetails = () => {
     const location = useLocation();
     console.log(location, "useLocation");
-    const { image, date, title, description, author } = location.state;
+    const { image, title, description, author, date } = location.state;
 
 
   return (
@@ -14,13 +14,13 @@ const BlogsDetails = () => {
         <img 
             src={image} 
             alt=""
-            className='mx-auto h-full w-full object-cover transition duration-700 hover:scale-110'
+            className='mx-auto h-full w-full object-cover'
         />
-      </div>
+      </div> 
       <div className='container pb-20'>
         <p className='text-slate-600 text-sm py-3'> 
             {" "}
-            Written by {author} on date {date} 
+            Written by {author} on {date}
         </p>
         <h1 className='text-2xl font-semibold mb-20'>{title}</h1>
         <p>{description}</p>

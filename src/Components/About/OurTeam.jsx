@@ -63,6 +63,66 @@ const TeamData =[
     iconX: ( <FaSquareXTwitter /> ),
     iconW: ( <FaWhatsapp/> )
 },
+{
+    id: 7,
+    name: "Obinna Eze",
+    title: "Director of Social",
+    img: "https://picsum.photos/104/104",
+    iconFb: ( <FaFacebook /> ),
+    iconIg: ( <FaInstagram/> ),
+    iconX: ( <FaSquareXTwitter /> ),
+    iconW: ( <FaWhatsapp/> )
+},
+{
+  id: 8,
+  name: "Ever Rose",
+  title: "Director of Sport",
+  img: "https://picsum.photos/101/101",
+  iconFb: ( <FaFacebook /> ),
+  iconIg: ( <FaInstagram/> ),
+  iconX: ( <FaSquareXTwitter /> ),
+  iconW: ( <FaWhatsapp/> )
+},
+{
+    id: 9,
+    name: "Buike Snow",
+    title: "Financial Secretary",
+    img: "https://picsum.photos/102/102",
+    iconFb: ( <FaFacebook /> ),
+    iconIg: ( <FaInstagram/> ),
+    iconX: ( <FaSquareXTwitter /> ),
+    iconW: ( <FaWhatsapp/> )
+},
+{
+    id: 10,
+    name: "Obinna Eze",
+    title: "Director of Social",
+    img: "https://picsum.photos/104/104",
+    iconFb: ( <FaFacebook /> ),
+    iconIg: ( <FaInstagram/> ),
+    iconX: ( <FaSquareXTwitter /> ),
+    iconW: ( <FaWhatsapp/> )
+},
+{
+  id: 11,
+  name: "Ever Rose",
+  title: "Director of Sport",
+  img: "https://picsum.photos/101/101",
+  iconFb: ( <FaFacebook /> ),
+  iconIg: ( <FaInstagram/> ),
+  iconX: ( <FaSquareXTwitter /> ),
+  iconW: ( <FaWhatsapp/> )
+},
+{
+    id: 12,
+    name: "Buike Snow",
+    title: "Financial Secretary",
+    img: "https://picsum.photos/102/102",
+    iconFb: ( <FaFacebook /> ),
+    iconIg: ( <FaInstagram/> ),
+    iconX: ( <FaSquareXTwitter /> ),
+    iconW: ( <FaWhatsapp/> )
+},
 ]
 
 const OurTeam = () => {

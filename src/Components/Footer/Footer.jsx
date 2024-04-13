@@ -31,7 +31,7 @@ const Footer = () => {
     
         <div className='text-white'> 
         {/* NewsLetter */}
-        <div className='md:flex md:justify-between md:items-center sm:px-12 px-4 bg-gray-400 py-7 '>
+        <div className='md:flex md:justify-between md:items-center sm:px-12 px-4 bg-gray-400 py-7'>
             <h1 className='lg:text-4xl md:text-3xl text-3xl md:mb-0 mb-6 lg:leading-normal font-semibold md:w-2/5'>
                 <span 
                     className='text-primary font-bold'>
@@ -94,11 +94,11 @@ const Footer = () => {
 
                 
                     {/*Company Address Section*/}
-                    <div className='py-8 px-4 '>
+                    <div className='py-8 px-4'>
                         <h1 className='text-xl font-semibold sm:text-left mb-3'>Address</h1>
                         <div>
                             <div className='flex gap-3 mt-3'>
-                                <FaLocationDot />
+                                <FaLocationDot className='md:text-xl' />
                                 <p className='mb-3'>Abia State University teaching hospital Aba, Abia State</p>
                             </div>
                             <div className='flex items-center gap-3 mt-2'>

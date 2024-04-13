@@ -35,8 +35,8 @@ const AboutSection = () => {
 
       {/* Shapes (optional, adjust positioning if needed) */}
       <div className="relative">
-        <div className="w-[8rem] h-[8rem] bg-primary rounded-tl-full rounded-tr-full absolute left-[40.5rem] top-[-35.5rem] z-[12rem]"></div>
-        <div className="w-[8rem] h-[8rem] bg-primary rounded-bl-full rounded-br-full absolute left-[73rem] right-[8rem] bottom-[1.5rem] z-[1rem]"></div>
+        <div className="w-[8rem] h-[8rem] bg-primary rounded-tl-full rounded-tr-full absolute left-[36.5rem] top-[-28.5rem] z-[12rem]"></div>
+        <div className="w-[8rem] h-[8rem] bg-primary rounded-bl-full rounded-br-full absolute left-[61rem] right-[8rem] bottom-[1.5rem] z-[1rem]"></div>
       </div>
       
     </section>
