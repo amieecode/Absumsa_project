@@ -29,6 +29,8 @@ const EventsDetails = [
     
     
 ];
+
+
 const EventsCard = () => {
   return (
     <div>
